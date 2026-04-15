@@ -19,9 +19,14 @@ function printMsg (strMsg)
     if (textArea01 == null)
         return;
 
-    dt = new Date();
-    strTimeStamp = `${dt.getHours()}.${dt.getMinutes()}.${dt.getSeconds()}:${dt.getMilliseconds()}`;
-    aMsgs.push (strTimeStamp + " " + strMsg);
+    if (strMsg.length > 0)
+    {
+        dt = new Date();
+        strTimeStamp = `${dt.getHours()}.${dt.getMinutes()}.${dt.getSeconds()}:${dt.getMilliseconds()}`;
+        strMsg = strTimeStamp + " " + strMsg
+    }
+
+    aMsgs.push (strMsg);
     if (aMsgs.length > MAXNUMMSGS)
         aMsgs.shift();
 
