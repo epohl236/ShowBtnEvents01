@@ -55,7 +55,7 @@ function handleButton01Ptr()
 }
 
 
-function handleInputBtn01TouchStart()
+function handleButton01TouchStart()
 {
     console.log ("touchstart");
     printMsg ("btn: touchstart");
@@ -76,7 +76,7 @@ function handleInputBtn01Ptr()
 }
 
 
-function handleButton01TouchStart()
+function handleInputBtn01TouchStart()
 {
     console.log ("touchstart");
     printMsg ("inp: touchstart");
