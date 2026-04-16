@@ -12,13 +12,40 @@
   <body>
     <header>
       <h1>Button events</h1>
+      <p>
+        Visualize selected button events in different browsers, and
+        whether they differ for button or input elements, and whether
+        they are affected if the handler throws an exception.
+      </p>
     </header>
 
     <main>
       <button id="button01">A button control</button>
+      <fieldset>
+        <legend>Throw exception in handler of</legend>
+        <input id="rb_btn01_none" type="radio" name="rb_button01" value="none" checked>
+        <label for="rb_btn01_none">none</label>
+        <input id="rb_btn01_click" type="radio" name="rb_button01" value="click">
+        <label for="rb_btn01_click">click</label>
+        <input id="rb_btn01_pointerdown" type="radio" name="rb_button01" value="pointerdown">
+        <label for="rb_btn01_pointerdown">pointerdown</label>
+        <input id="rb_btn01_touchstart" type="radio" name="rb_button01" value="touchstart">
+        <label for="rb_btn01_touchstart">touchstart</label>
+      </fieldset>
       <br>
       <br>
 	    <input id="inputBtn01" type="button" value="An input of type button" />
+      <fieldset>
+        <legend>Throw exception in handler of</legend>
+        <input id="rb_inp01_none" type="radio" name="rb_inpBtn01" value="none" checked>
+        <label for="rb_inp01_none">none</label>
+        <input id="rb_inp01_click" type="radio" name="rb_inpBtn01" value="click">
+        <label for="rb_inp01_click">click</label>
+        <input id="rb_inp01_pointerdown" type="radio" name="rb_inpBtn01" value="pointerdown">
+        <label for="rb_inp01_pointerdown">pointerdown</label>
+        <input id="rb_inp01_touchstart" type="radio" name="rb_inpBtn01" value="touchstart">
+        <label for="rb_inp01_touchstart">touchstart</label>
+      </fieldset>
       <br>
       <br>
       <textarea id="textArea01" rows="20" cols="60"></textarea>
